@@ -47,4 +47,5 @@ const api = {
 api.multiply = (x, y) => {
     return x * y;
 }
+
 console.log(api.add(1, 10));
