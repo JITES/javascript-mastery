@@ -1,13 +1,15 @@
 // function declaration 
 greet(); // ******* differs in hoisting **********
 
+// function declartion is when the first word is "function"
+
 function greet() {
     console.log('Hi from greet')
 }
 
 //speak();
-
-// function expression
+// ! Please refer to the res
+// function expression -- word function is the first word
 const speak = () => {
     console.log('hi from speak -- function expression')
 }
