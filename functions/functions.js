@@ -8,7 +8,7 @@ function greet() {
 }
 
 //speak();
-// ! Please refer to the res
+
 // function expression -- word function is the first word
 const speak = () => {
     console.log('hi from speak -- function expression')
