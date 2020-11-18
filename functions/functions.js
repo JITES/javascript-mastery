@@ -51,3 +51,17 @@ api.multiply = (x, y) => {
 }
 
 console.log(api.add(1, 10));
+
+
+// ! functions are first class, treat function as variable
+
+function greet() {
+    console.log('hi');
+}
+
+function logGreeting(fn) {
+    fn();
+}
+
+logGreeting(greet) // ? we don`t put paranthesis
+
