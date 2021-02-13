@@ -1,0 +1,2 @@
+The two most common ways to access properties in JavaScript are with a dot and with square brackets. Bothvalue.x and value[x]access a propertyonvalue—but not necessarily the same property. The difference is in how63
+xis interpreted. When using a dot, the part after the dot must be a valid variable name, and it directly names the property. When using squarebrackets, the expression between the brackets isevaluatedto get theproperty name.  Whereasvalue.xfetches the property of value named“x”,value[x]tries to evaluate the expressionx and uses the result as theproperty name.

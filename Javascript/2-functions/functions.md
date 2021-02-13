@@ -1,0 +1,1 @@
+A pure function is a specific kind of value-producing function that notonly has no side effects but also doesn’t rely on side effects from othercode—for example, it doesn’t read global variables that are occasionallychanged by other code. A pure function has the pleasant property that,when called with the same arguments, it always produces the same value
