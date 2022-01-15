@@ -1,0 +1,24 @@
+{
+  "name": "javascript-mastery",
+  "version": "1.0.0",
+  "description": "repo to mastery javascript basics ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JITES/javascript-mastery.git"
+  },
+  "keywords": [
+    "javascript",
+    "javascript-mastery",
+    "javascript-fundamentals"
+  ],
+  "author": "Jitesh Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JITES/javascript-mastery/issues"
+  },
+  "homepage": "https://github.com/JITES/javascript-mastery#readme"
+}
