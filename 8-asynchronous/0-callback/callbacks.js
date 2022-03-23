@@ -1,25 +1,19 @@
-
-
+/*
+A callback function is a function passed into another function as an argument, which is 
+then invoked inside the outer function to complete some kind of routine or action.
+*/
 
 function loginUser(email, password, callback) {
-    console.log('Started');
+    console.log('started')
+
     setTimeout(() => {
-        console.log("Now we have the data");
+        console.log("now we have received the data");
         callback({userEmail: email})
     }, 5000);
 
-    console.log('Waiting to exit');
-
+    console.log('waiting to exit')
 } 
 
-
-const user = loginUser("goo@goomail.com", 1212, user => {
+const user = loginUser("jitesh@corp.com", 'passwordx', user => {
     console.log(user)
 })
-
-const test = function () {
-    console.log('test');
-}
-
-let test1 = test;
-console.log(`This is test ${test1}`)
