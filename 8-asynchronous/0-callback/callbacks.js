@@ -7,7 +7,7 @@ function loginUser(email, password, callback) {
     console.log('started')
 
     setTimeout(() => {
-        console.log("now we have received the data");
+        console.log("now we have received the data")
         callback({userEmail: email})
     }, 5000);
 
@@ -17,3 +17,5 @@ function loginUser(email, password, callback) {
 const user = loginUser("jitesh@corp.com", 'passwordx', user => {
     console.log(user)
 })
+
+// the function is executed 
