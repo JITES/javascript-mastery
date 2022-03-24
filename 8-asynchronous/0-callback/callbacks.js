@@ -17,5 +17,3 @@ function loginUser(email, password, callback) {
 const user = loginUser("jitesh@corp.com", 'passwordx', user => {
     console.log(user)
 })
-
-// the function is executed 
