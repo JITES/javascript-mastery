@@ -3,7 +3,7 @@ console.log(num); // this will print undefined
 //console.log(blockScoped); // Reference error
 
 var num = 24;
-let blockScoped = 06;
+let blockScoped = 06; // this will have blocked scope
 console.log(num);
 
 console.log(printName);
