@@ -25,5 +25,17 @@ Global execution context is created
 ### Closure
 
 ### Temporal Dead Zone / let and const
+Phase from hoisting till it gets some value, it happens for let and const.
+ It is the time since when the variable was hoisted and it was assigned a value
 
-
+### Block scope & Shadowing
+```
+var a = 100; // global-scope
+let b = 10; // script-scope
+{ 
+    var a = 10; // shadowing
+    let b = 20;
+    const c = 30;
+}
+log(a) // 100
+```
