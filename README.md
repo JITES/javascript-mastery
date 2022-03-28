@@ -11,7 +11,7 @@ Phase 1
   
 Phase 2 
 - Execution phase
-- Engine run its code line by line
+- Engine run its code line by linef
 
 ---
 ### Hoisting
@@ -23,4 +23,7 @@ In the Phase 1 of memory creation JS will reserve memory for funcitons and varia
 Global execution context is created 
 
 ### Closure
+
+### Temporal Dead Zone / let and const
+
 
