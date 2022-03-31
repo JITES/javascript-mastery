@@ -24,3 +24,18 @@ Close callbacks - execute close handlers
 
 
 ----
+
+callstack = ['event', 'setTimeout']
+
+taskQueue = ['() => log(#1)']
+microTaskQueue
+
+Browser usually doesn't put things directly to the main call-stack, it is first moved to the task-queue.
+
+V8 will take a look at taskQueue and microTaskQueue when taskQueue is not empty, it will take the event and will move it to the callstack.
+
+
+* setTimeout uses taskQueue internally
+* Promise.resolve the statement is moved to the microtask queue
+
+The moment the call-stack is empty, the micro task queue is not empty it will exhaust the whole micro-task queue at once.

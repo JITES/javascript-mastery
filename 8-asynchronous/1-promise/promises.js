@@ -16,11 +16,19 @@ const p3 = new Promise((resolve, reject) => {
     }, 4000)
 })
 
+const p4 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('this is fourth promise')
+    }, 4000)
+})
+
+
 Promise.all([p1,p2,p3]).then(x=> {
     console.log(x[0]);
     console.log(x[1]);
     console.log(x[2]);
-}); //
+}); // Promise.all will reject as soon as one of the Promises in the array rejects.
+
 
 
 Promise.allSettled([p1,p2,p3]).then(x=> {
